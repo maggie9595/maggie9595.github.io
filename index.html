@@ -3,5 +3,35 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
-</body>
+
+  <head>
+    <title>Play Games with jQuery</title>
+    <link rel="stylesheet" href="css/application.css" type="text/css" />
+    <link rel="stylesheet" href="css/theme/jquery-ui.min.css" type="text/css" />
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/tictactoe.js"></script>
+  </head>
+  <body>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tab1">Home</a></li>
+        <li><a href="#tab2">Slider Game</a></li>
+        <li><a href="#tab3">Tic Tac Toe</a></li>
+      </ul>
+      <div id="tab1">
+        <h1>Welcome to the jQuery UI Game Center</h1>
+        <p id="welcome">On the following tabs are some simple games made with jQuery and jQuery UI.  This is part of a demo as well as an exercise for students in 67-103: Fundamentals of Web Design.</p>
+      </div>
+      <div id="tab2">
+        <div id="slider_object"></div>
+      </div>
+      <div id="tab3">
+        <div id="message"></div>
+        <div id="ttt-board"></div>
+      </div>
+    </div>
+  </body>
 </html>
