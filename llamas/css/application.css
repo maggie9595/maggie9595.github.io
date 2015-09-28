@@ -1,0 +1,55 @@
+nav .brand-logo {
+	margin-top: 10px;
+	margin-left: 8px;
+	height: 60%;
+}
+
+hr.fancy {
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+	background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+hr.fancy2 {
+	padding: 0;
+	border: none;
+	border-top: medium double #333;
+	color: #333;
+	text-align: center;
+}
+
+hr.fancy2:after {
+	content: "§";
+	display: inline-block;
+	position: relative;
+	top: -0.7em;
+	font-size: 1.5em;
+	padding: 0 0.25em;
+	background: white;
+}
+
+.rounded-corners {
+	border-radius: 70px;
+	margin-top: 35px;
+}
+
+.slider {
+	margin-top: 35px;
+}
+
+.materialboxed { 
+	display: inline;
+}
+
+/*link styles*/
+/*.col a:hover {
+	text-decoration: underline;
+}*/
+
+/*h1, h2, h3, h4, h5, h6 {
+	color: black;
+}*/
