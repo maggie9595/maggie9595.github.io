@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Rick Slowman<i class="material-icons right">more_vert</i></span>
-                                    <p><a href="#">Message Rick</a></p>
+                                    <p><a class="modal-trigger" href="#message-modal">Message Rick</a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Rick Slowman<i class="material-icons right">close</i></span>
@@ -85,7 +85,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Amy Schlanski<i class="material-icons right">more_vert</i></span>
-                                    <p><a href="#">Message Amy</a></p>
+                                    <p><a class="modal-trigger" href="#message-modal">Message Amy</a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Amy Schlanski<i class="material-icons right">close</i></span>
@@ -101,7 +101,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Lana Del Lama<i class="material-icons right">more_vert</i></span>
-                                    <p><a href="#">Message Lana</a></p>
+                                    <p><a class="modal-trigger" href="#message-modal">Message Lana</a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Lana Del Lama<i class="material-icons right">close</i></span>
@@ -117,7 +117,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Kitty van Meowmeow<i class="material-icons right">more_vert</i></span>
-                                    <p><a href="#">Message Kitty</a></p>
+                                    <p><a class="modal-trigger" href="#message-modal">Message Kitty</a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Kitty van Meowmeow<i class="material-icons right">close</i></span>
@@ -133,7 +133,7 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Woffy Bowser<i class="material-icons right">more_vert</i></span>
-                                    <p><a href="#">Message Woffy</a></p>
+                                    <p><a class="modal-trigger" href="#message-modal">Message Woffy</a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Woffy Bowser<i class="material-icons right">close</i></span>
@@ -149,7 +149,8 @@
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Jordan O'Brien<i class="material-icons right">more_vert</i></span>
-                                    <p><a href="#">Message Jordan</a></p>
+                                    <!-- Modal Trigger -->
+                                    <p><a class="modal-trigger" href="#message-modal">Message Jordan</a></p>
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Jordan O'Brien<i class="material-icons right">close</i></span>
@@ -159,6 +160,32 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Message modal -->
+        <div id="message-modal" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Send A Message</h4>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="subject" type="text" class="validate">
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Message</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-light btn" onclick="Materialize.toast('Your message was sent successfully!', 3000)">Send</a>
             </div>
         </div>
     </body>

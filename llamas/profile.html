@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Llama Match - My Profile</title>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import Materialize CSS-->
+        <link rel="stylesheet" type="text/css" href="css/materialize.css">
+        <link rel="stylesheet" type="text/css" href="css/application.css">
+    </head>
+
+    <body>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+        <script type="text/javascript" src="js/application.js"></script>
+
+        <div class="row">
+            <div id="main_content">
+                <!-- navbar -->
+                <div class="navbar-fixed">
+                    <nav>
+                        <div class="nav-wrapper">
+                            <a href="index.html"><img src="images/logo.png" class="brand-logo"></a>
+                            <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <!-- Dropdown Trigger -->
+                                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">My Account<i class="material-icons right">arrow_drop_down</i></a></li>
+                            </ul>
+                            <ul class="side-nav" id="mobile-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="profile.html">My Profile</a></li>
+                                <li><a href="matches.html">My Matches</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <!-- Dropdown structure for navbar -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li class="active"><a href="profile.html">My Profile</a></li>
+                        <li><a href="matches.html">My Matches</a></li>
+                    </ul>
+                </div>
+
+                <!-- Main content -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 center">
+                            <h2>
+                                My Profile
+                            </h2>
+                            <!-- Tabs -->
+                            <div class="row z-depth-2">
+                                <div class="col s12">
+                                    <ul class="tabs">
+                                        <li class="tab col s3"><a class="active" href="#account">Account Information</a></li>
+                                        <li class="tab col s3"><a href="#settings">Settings</a></li>
+                                        <li class="tab col s3"><a href="#messages">My Messages</a></li>
+                                        <li class="tab col s3"><a href="#help">Help</a></li>
+                                    </ul> 
+                                </div>
+
+                                <!-- Account information tab -->
+                                <div id="account" class="col s12 profile">
+                                    <img src="images/profilepic.jpg" class="avatar">
+                                    <br><br>
+                                    Maggie Yu
+                                    <br>
+                                    Pittsburgh, PA
+                                    <br><br>
+                                    Loyal Llama Match member since 2015
+                                    <br>
+                                    maggieyu@cmu.edu
+                                    <br>
+                                    717-298-0606
+                                </div>
+                                <!-- Settings tab -->
+                                <div id="settings" class="col s12 profile">
+                                    <div class="container">
+                                        <form action="#">
+                                            <p>
+                                                <input type="checkbox" id="1" />
+                                                <label for="1">Receive emails for new messages.</label>
+                                            </p>
+                                            <p>
+                                                <input type="checkbox" id="2" checked="checked" />
+                                                <label for="2">Receive emails when someone friends you.</label>
+                                            </p>
+                                            <p>
+                                                <input type="checkbox" id="3" />
+                                                <label for="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus nulla, id mattis augue tristique et. Sed ut quam eget arcu laoreet bibendum id non velit. Phasellus aliquam tempus condimentum. Suspendisse semper maximus orci, ac volutpat mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </label>
+                                            </p>
+                                            <p>
+                                                <input type="checkbox" id="4" />
+                                                <label for="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus nulla, id mattis augue tristique et. Sed ut quam eget arcu laoreet bibendum id non velit. </label>
+                                            </p>
+                                            <p>
+                                                <input type="checkbox" id="5" checked="checked" />
+                                                <label for="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus nulla, id mattis augue. </label>
+                                            </p>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- Messages tab -->
+                                <div id="messages" class="col s12 profile">
+                                    <ul class="collection">
+                                        <li class="collection-item dismissable"><div>Alvin: Hello!<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+                                        <li class="collection-item dismissable"><div>Rick: Where do you live?<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+                                        <li class="collection-item dismissable"><div>Amy: Want to see a movie this weekend?<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+                                        <li class="collection-item dismissable"><div>Lana: How are you??<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+                                    </ul>
+                                </div>
+                                <!-- Help tab -->
+                                <div id="help" class="col s12 profile">
+                                    <div class="container">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis dapibus nulla, id mattis augue tristique et. Sed ut quam eget arcu laoreet bibendum id non velit. Phasellus aliquam tempus condimentum. Suspendisse semper maximus orci, ac volutpat mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in orci facilisis, porttitor nisi sit amet, elementum est. Aliquam venenatis felis in dolor gravida, ut scelerisque est placerat. Nulla et diam tortor. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque tincidunt finibus est, dictum ullamcorper risus ullamcorper sit amet. Morbi et imperdiet massa. Pellentesque vitae felis ut erat luctus gravida sed sit amet sem. Nam in tortor et erat aliquam hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                                            <br><br>
+                                            Donec a ultrices lorem. Vestibulum et lorem nec metus tristique lacinia ac a urna. Ut ac tempus nunc. Nullam non magna porttitor neque auctor sollicitudin et eget metus. Suspendisse rhoncus metus quis lectus lacinia pharetra. Nullam at dapibus erat. Cras rutrum dolor id elit maximus lobortis. Proin fermentum fermentum purus sed interdum. Ut fringilla neque quis velit ullamcorper, sit amet placerat arcu ultrices. Cras finibus, odio vitae vehicula aliquam, urna nibh pharetra nulla, non consequat tellus mi sit amet quam. Maecenas eget tortor at nibh iaculis dictum ac a mauris. Nunc ultricies leo et tellus consequat, id maximus massa porta. Nulla nec nibh ac nunc ornare efficitur. Duis congue arcu a porttitor mattis. Nulla at suscipit augue, vel laoreet diam.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center">
+                    <hr class="fancy">
+                    <br>
+
+                    <div id="footer">
+                        <a href="index.html">Home</a>&nbsp;&nbsp;::&nbsp;&nbsp;
+                        <a href="about.html">About Llama Match</a>&nbsp;&nbsp;::&nbsp;&nbsp;
+                        <a href="matches.html">My Matches</a>
+                        <br><br>
+                        <div id="copy">
+                            Webmaster: <a href="mailto:maggieyu@cmu.edu?Subject=Llama%20Match" target="_top">Maggie Yu</a>
+                            &nbsp;&copy 2015
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </footer>
+</html>
